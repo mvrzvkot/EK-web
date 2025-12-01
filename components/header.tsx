@@ -30,20 +30,21 @@ export function Header() {
     <>
       {/* Top bar */}
       <div className="py-2.5 px-4 border-b border-accent/20 bg-accent">
-        <div className="container mx-auto flex justify-end items-center gap-6 text-sm">
+        <div className="container mx-auto flex flex-wrap justify-center md:justify-end items-center gap-3 md:gap-6 text-xs md:text-sm">
           <a
             href="tel:+48510677716"
-            className="flex items-center gap-2 text-primary-foreground/90 hover:text-accent transition-colors"
+            className="flex items-center gap-2 text-primary-foreground/90 hover:text-accent transition-colors whitespace-nowrap"
           >
-            <Phone className="w-4 h-4" />
+            <Phone className="w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0" />
             <span>+48 510 677 716</span>
           </a>
           <a
             href="mailto:kancelaria@adwokatkijewska.pl"
             className="flex items-center gap-2 text-primary-foreground/90 hover:text-accent transition-colors"
           >
-            <Mail className="w-4 h-4" />
-            <span>kancelaria@adwokatkijewska.pl</span>
+            <Mail className="w-3.5 h-3.5 md:w-4 md:h-4 flex-shrink-0" />
+            <span className="hidden sm:inline">kancelaria@adwokatkijewska.pl</span>
+            <span className="sm:hidden">Email</span>
           </a>
         </div>
       </div>
