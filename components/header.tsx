@@ -48,7 +48,6 @@ export function Header() {
         </div>
       </div>
 
-    
       {/* Main header */}
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? "bg-primary shadow-lg" : "bg-primary"}`}
@@ -56,14 +55,8 @@ export function Header() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3">
-              <div className="w-12 h-12 border-2 border-accent flex items-center justify-center">
-                <span className="text-accent font-serif text-2xl font-bold">EK</span>
-              </div>
-              <div className="text-primary-foreground">
-                <div className="font-serif text-xl font-bold tracking-wide">Ewelina Kijewska</div>
-                <div className="text-xs tracking-widest uppercase text-accent">Kancelaria Adwokacka</div>
-              </div>
+            <Link href="/" className="flex items-center">
+              <Logo className="h-12" />
             </Link>
 
             {/* Desktop Navigation */}
