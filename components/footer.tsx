@@ -7,16 +7,8 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <div className="mb-4">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-12 border-2 border-accent flex items-center justify-center">
-                  <span className="text-accent font-serif text-2xl font-bold">EK</span>
-                </div>
-                <div className="text-primary-foreground">
-                  <div className="font-serif text-xl font-bold tracking-wide">Ewelina Kijewska</div>
-                  <div className="text-xs tracking-widest uppercase text-accent">Kancelaria Adwokacka</div>
-                </div>
-              </div>
+           <div className="mb-4">
+              <Logo />
             </div>
             <p className="text-sm text-primary-foreground/80 leading-relaxed">
               Profesjonalna obsługa prawna. Kompleksowe doradztwo i reprezentacja w sprawach cywilnych, karnych,
